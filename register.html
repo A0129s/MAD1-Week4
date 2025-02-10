@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <!--name>text,  gender>MCQ,  age>number, qual>text, stream>dropdown, address>textarea-->
+    <form action="/register" method="post">
+        <lable for="username">Name:</lable>
+        <input type="text" id="username" name="name"><br>
+
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br>
+
+        <lable for="age">Age:</lable>
+        <input type ="number" id="age" name="age"><br>
+        <br>
+
+        <lable for="qual">Qualification:</lable>
+        <input type="text" id="qual" name="qual"><br>
+        <br>
+
+        <lable for="str">Stream:</lable>
+        <select name="stream" id="str">
+            <option value="Electrical">Electrical</option>
+            <option value="Mechanical">Mechanical</option>
+            <option value="Civil">Civil</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Data Science">Data Science</option>
+        </select><br>
+        <br>
+
+        <lable for="address">Address:</lable>
+        <textarea name="address" id="address" cols="30" rows="5"></textarea><br>
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
